@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 400px;
+}
+
+.form-container {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f06292;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ec407a;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+
+.overlay h2 {
+    margin-bottom: 20px;
+    color: #f06292;
+}
+
+.overlay p {
+    margin-bottom: 40px;
+    color: #bdbdbd;
+}
+
+.overlay button.ghost {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.overlay button.ghost:hover {
+    background-color: #fff;
+    color: #f06292;
+}

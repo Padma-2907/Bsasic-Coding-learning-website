@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-image: url('data:image/jpeg;base64,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');
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        h2, h3 {
+            color: #001a72;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .teachers {
+            margin-top: 20px;
+        }
+
+        .teacher {
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #ecf0f1;
+        }
+
+        .benefits {
+            margin-top: 20px;
+        }
+
+        .enroll-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #ecf0f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .enroll-button:hover {
+            background-color: #c0392b;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript</h1>
+    </header>
+
+    <div class="container">
+        <h2>Let's JavaScript together – Join Now!"</h2>
+        
+        <div class="teachers">
+            <h2>Meet Our Experienced Instructors</h2>
+
+            <div class="teacher">
+                <h3>Michael Thompson</h3>
+                <p>Michael Thompson is a Java expert with a focus on backend development. Learn from his practical experience in building enterprise-level applications.</p>
+            </div>
+
+            <div class="teacher">
+                <h3>Lisa Rodriguez</h3>
+                <p>Lisa Rodriguez specializes in Java GUI programming. Join her courses to create interactive and user-friendly graphical applications.</p>
+            </div>
+
+            <!-- Add more teachers as needed -->
+
+        </div>
+
+        <div class="benefits">
+            <h2>Benefits of Learning JvaScript with Us</h2>
+            <ul>
+                <li>Immerse yourself in hands-on, practical projects that mirror real-world scenarios. Gain the skills needed to excel in professional web development.</li>
+                <li>Our interactive approach to JavaScript ensures an engaging learning experience. Say goodbye to boring lectures and hello to dynamic, fun coding sessions.</li>
+                <li>Equip yourself with in-demand skills. Our JavaScript courses are designed to make you job-ready, whether you're aiming for a front-end development role or building full-stack expertise.</li>
+                <li>Learn at your own pace and schedule</li>
+                <li>Join a thriving community of learners. Connect, collaborate, and grow with fellow JavaScript enthusiasts. Support is just a click away as you embark on your coding journey.</li>
+                <!-- Add more benefits as needed -->
+            </ul>
+        </div>
+
+        <a href="login.html" class="enroll-button">Enroll Now</a>
+
+    </div>
+
+    
+
+</body>
+</html>
